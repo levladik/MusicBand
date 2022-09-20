@@ -90,6 +90,42 @@ h6 {
 	font-weight: 400;
 }
 
+/* lato-regular - latin */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		url('../fonts/lato-v23-latin-regular.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('../fonts/lato-v23-latin-regular.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-700 - latin */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	src: local(''),
+		url('../fonts/lato-v23-latin-700.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('../fonts/lato-v23-latin-700.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-900 - latin */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 900;
+	src: local(''),
+		url('../fonts/lato-v23-latin-900.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('../fonts/lato-v23-latin-900.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /* --------------------------- */
 
 /* NAV */
@@ -107,16 +143,30 @@ h6 {
 .nav__item {
 	margin-right: 25px;
 }
+.nav__link {
+	font-family: 'Lato';
+	text-transform: uppercase;
+	color: white;
+}
 
 /* SLIDESHOW */
 .slideshow__img {
 	width: 100%;
 }
 .slideshow__text {
-	display: inline-block;
 	position: relative;
-	bottom: 50px;
-	left: 80px;
+	bottom: 120px;
+	text-align: center;
 
-	color: aliceblue;
+	color: white;
+	font-family: 'Lato';
+	line-height: 40px;
+}
+.slideshow__title {
+	font-size: 24px;
+	font-weight: 400;
+}
+.slideshow__desc {
+	font-size: 15px;
+	font-weight: 700;
 }
