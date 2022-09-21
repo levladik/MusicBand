@@ -129,6 +129,9 @@ h6 {
 /* --------------------------- */
 
 /* NAV */
+* {
+	font-family: 'Lato';
+}
 .nav {
 	background-color: black;
 	display: flex;
@@ -144,7 +147,6 @@ h6 {
 	margin-right: 25px;
 }
 .nav__link {
-	font-family: 'Lato';
 	text-transform: uppercase;
 	color: white;
 }
@@ -166,7 +168,6 @@ h6 {
 	text-align: center;
 
 	color: white;
-	font-family: 'Lato';
 	line-height: 40px;
 }
 .slideshow__title {
@@ -183,9 +184,9 @@ h6 {
 	max-width: 780px;
 	margin: 0 auto;
 	text-align: justify;
+	margin-bottom: 80px;
 }
 .section__title {
-	font-family: 'Lato';
 	font-weight: 400;
 	font-size: 30px;
 	line-height: 1.5;
@@ -196,7 +197,6 @@ h6 {
 	margin-bottom: 20px;
 }
 .section__subtitle {
-	font-family: 'Lato';
 	font-weight: 400;
 	font-style: italic;
 	font-size: 15px;
@@ -207,7 +207,6 @@ h6 {
 	color: rgb(106, 106, 106);
 }
 .band__text {
-	font-family: 'Lato';
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 1.5;
@@ -219,8 +218,6 @@ h6 {
 	justify-content: space-around;
 }
 .band__photo-title {
-}
-.band__photo-title {
 	text-align: center;
 
 	margin-bottom: 15px;
@@ -230,4 +227,100 @@ h6 {
 	display: block;
 	margin: 0 auto;
 	border-radius: 4px;
+}
+
+/* TOUR */
+.tour__wrapper {
+	background-color: black;
+}
+.tour {
+	max-width: 780px;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+.tour__title {
+	color: white;
+	padding-top: 80px;
+}
+.tour__schedule {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.schedule__month-name {
+	color: #757575;
+	border-bottom: 1px solid #ddd;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 8px 16px;
+}
+.schedule__ticket-status-sold {
+	font-size: 15px;
+	line-height: 1.5;
+
+	background-color: #f44336;
+	color: white;
+	padding: 2px 8px;
+	text-align: center;
+
+	margin-left: 16px;
+}
+.schedule__ticket-status {
+	font-size: 15px;
+	line-height: 1.5;
+
+	background-color: black;
+	color: white;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-align: center;
+	border-radius: 15px;
+	float: right;
+
+	margin-right: 16px;
+}
+.buy__tickets_container {
+	display: flex;	
+	justify-content: space-between;
+}
+.buy__tickets_card {
+	max-width: 32%;
+	background-color: white;
+}
+.buy__tickets_info {
+	max-width: 80%;
+	margin: 0 auto;
+}
+.buy__tickets_city-pic {
+	margin-bottom: 15px;
+}
+.buy__tickets_city-name {
+	font-weight: bolder;
+	font-size: 15px;
+	line-height: 1.5;
+
+	margin-bottom: 15px;
+}
+.buy__tickets_city-date {
+	opacity: 0.60;
+	font-size: 15px;
+	line-height: 1.5;
+
+	margin-bottom: 15px;
+}
+.buy__tickets_city-desc {
+	font-size: 15px;
+	line-height: 1.5;
+
+	margin-bottom: 15px;
+}
+.buy__tickets_buy-button {
+	color: white;
+	background-color: black;
+	font-size: 15px;
+	line-height: 1.5;
+
+	padding: 5px 10px;
+	margin-bottom: 10px;
 }
