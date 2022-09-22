@@ -237,6 +237,7 @@ h6 {
 	max-width: 780px;
 	margin: 0 auto;
 	padding-bottom: 80px;
+	margin-bottom: 80px;
 }
 .tour__title {
 	color: white;
@@ -323,4 +324,50 @@ h6 {
 
 	padding: 5px 10px;
 	margin-bottom: 10px;
+}
+
+/* CONTACTS */
+.contacts {
+	max-width: 790px;
+	margin: 0 auto;
+}
+.contacts__container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.contacts__info > p {
+	font-size: 18px;
+	line-height: 1.5;
+
+	background: url(/assets/Arrow_icon.png) left no-repeat;
+	padding-left: 45px;
+}
+.contacts__form-name {
+	margin-right: 10px;
+	border: 1px solid #ccc;
+	font-size: 15px;
+	padding: 8px;
+	width: 210px;
+}
+.contacts__form-email {
+	font-size: 15px;
+	border: 1px solid #ccc;
+	padding: 8px;
+	margin-bottom: 10px;
+}
+.contacts__form-message {
+	font-size: 15px;
+	width: 100%;
+	display: block;
+	border: 1px solid #ccc;
+	padding: 8px;
+}
+.contacts__form-button {
+	float: right;
+	color: #fff;
+	background-color: #000;
+	margin: 16px 0;
+	padding: 8px 16px;
+	font-size: 18px;
 }
