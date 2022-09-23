@@ -133,22 +133,35 @@ h6 {
 	font-family: 'Lato';
 }
 .nav {
+	z-index: 999;
+	position: fixed;
+	width: 100%;
 	background-color: black;
 	display: flex;
 	justify-content: space-between;
 
-	padding: 15px;
+	/* padding: 15px; */
 }
 .nav__list {
 	display: flex;
 	flex-wrap: wrap;
 }
 .nav__item {
-	margin-right: 25px;
+	margin-right: 10px;
+	padding: 15px;
 }
 .nav__link {
+	font-size: 18px;
 	text-transform: uppercase;
 	color: white;
+}
+.nav__search-button {
+	background-color: #000;
+	color: white;
+	padding: 12px 20px;
+}
+.fas {
+	font-size: 15px;
 }
 
 /* SLIDESHOW */
@@ -159,12 +172,14 @@ h6 {
 	margin-bottom: 0;
 }
 .slideshow__img {
+	position: relative;
+	top: 45px;
 	width: 100%;
 }
 .slideshow__text {
 	position: relative;
 	bottom: 120px;
-	margin-bottom: -80px;
+	margin-bottom: -35px;
 	text-align: center;
 
 	color: white;
@@ -184,6 +199,7 @@ h6 {
 	max-width: 780px;
 	margin: 0 auto;
 	text-align: justify;
+
 	margin-bottom: 80px;
 }
 .section__title {
@@ -374,18 +390,34 @@ h6 {
 }
 
 /* MAP */
-.media {
-	padding: 25px 0;
-}
 .map__pic {
 	filter: grayscale(50%);
 	width: 100%;
+}
+/* MEDIA */
+.media {
+	padding: 25px 0;
 }
 .media__list {
 	display: flex;
 	justify-content: center;
 }
+.media__link > img{
+	width: 20px;
+	margin: 0 3px;
+}
 .sign {
 	text-align: center;
 	padding-top: 25px;
+}
+
+.nav__link:hover {
+	text-decoration: underline 2px;
+}
+.nav__link:active {
+	font-size: 17px;
+	margin: 1.2px;
+}
+.nav__search-button:hover {
+	background-color: #f44336;
 }
