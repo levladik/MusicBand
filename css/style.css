@@ -330,6 +330,7 @@ h6 {
 .contacts {
 	max-width: 790px;
 	margin: 0 auto;
+	padding-bottom: 80px;
 }
 .contacts__container {
 	display: flex;
@@ -370,4 +371,21 @@ h6 {
 	margin: 16px 0;
 	padding: 8px 16px;
 	font-size: 18px;
+}
+
+/* MAP */
+.media {
+	padding: 25px 0;
+}
+.map__pic {
+	filter: grayscale(50%);
+	width: 100%;
+}
+.media__list {
+	display: flex;
+	justify-content: center;
+}
+.sign {
+	text-align: center;
+	padding-top: 25px;
 }
