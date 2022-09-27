@@ -160,6 +160,7 @@ h6 {
 	color: white;
 }
 .sub-nav__list {
+	display: none;
 	position: absolute;
 	top: 47.4px;
 }
@@ -426,7 +427,10 @@ h6 {
 	text-align: center;
 	padding-top: 25px;
 }
-
+.nav__item:hover .sub-nav__list {
+	display: block;
+	color: #000;
+}
 .nav__link:hover {
 	background-color: #ccc;
 	color: #000;
@@ -441,4 +445,7 @@ h6 {
 }
 .nav__search-button:hover {
 	background-color: #f44336;
+}
+.nav__link:hover .sub-nav__list {
+	display: block;
 }
