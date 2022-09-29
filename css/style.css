@@ -328,6 +328,7 @@ h6 {
 }
 .buy__tickets_city-pic {
 	margin-bottom: 15px;
+	overflow: hidden;
 }
 .buy__tickets_city-name {
 	font-weight: bolder;
@@ -427,6 +428,8 @@ h6 {
 	text-align: center;
 	padding-top: 25px;
 }
+
+/* EFFECTS */
 .nav__item:hover .sub-nav__list {
 	display: block;
 	color: #000;
@@ -448,4 +451,15 @@ h6 {
 }
 .nav__link:hover .sub-nav__list {
 	display: block;
+}
+
+.buy__tickets_city-img:hover {
+	filter:brightness(50%);
+	transform: scale(1.05);
+	transition: 0.3s;
+}
+
+button:hover {
+	background-color: #ccc;
+	color: #000;
 }
