@@ -154,9 +154,9 @@ h6 {
 	font-size: 18px;
 	text-transform: uppercase;
 	color: white;
-	padding: 12px 20px;
+	padding: 13px 20px;
 }
-.fa-caret-down {
+.nav-arrow {
 	color: white;
 }
 .sub-nav__list {
@@ -374,9 +374,7 @@ h6 {
 .contacts__info > p {
 	font-size: 18px;
 	line-height: 1.5;
-
-	background: url(/assets/Arrow_icon.png) left no-repeat;
-	padding-left: 45px;
+	display: inline;
 }
 .contacts__form-name {
 	margin-right: 10px;
@@ -430,8 +428,11 @@ h6 {
 }
 
 /* EFFECTS */
-.nav__item:hover .sub-nav__list {
+body.mouse .nav__item:hover .sub-nav__list {
 	display: block;
+	color: #000;
+}
+body.mouse .nav__link-more:hover .nav-arrow {
 	color: #000;
 }
 .nav__link:hover {
@@ -445,6 +446,7 @@ h6 {
 .nav__link:active {
 	font-size: 17px;
 	margin: 1.2px;
+	padding-bottom: 14px;
 }
 .nav__search-button:hover {
 	background-color: #f44336;
@@ -452,11 +454,19 @@ h6 {
 .nav__link:hover .sub-nav__list {
 	display: block;
 }
+.contacts__form:focus {
+	border: 2px solid black;
+	border-radius: 5px;
+}
 
 .buy__tickets_city-img:hover {
 	filter:brightness(50%);
 	transform: scale(1.05);
 	transition: 0.3s;
+}
+
+.media__link-img:hover {
+	filter: contrast(30%);
 }
 
 button:hover {
