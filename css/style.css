@@ -435,6 +435,10 @@ body.mouse .nav__item:hover .sub-nav__list {
 body.mouse .nav__link-more:hover .nav-arrow {
 	color: #000;
 }
+
+body.touch .sub-nav__list.open {
+	display: block;
+}
 .nav__link:hover {
 	background-color: #ccc;
 	color: #000;
@@ -455,7 +459,7 @@ body.mouse .nav__link-more:hover .nav-arrow {
 	display: block;
 }
 .contacts__form:focus {
-	border: 2px solid black;
+	border: 1px solid black;
 	border-radius: 5px;
 }
 

@@ -12,13 +12,13 @@ let body = document.querySelector('body');
 if (isMobile.any()) {
 	body.classList.add('touch');
 
-	let arrow = document.querySelectorAll('.nav-arrow');
-	let subMenu = document.querySelector('sub-nav__list');
+	let menu = document.querySelector('.nav__link-more');
+	console.log(menu);
 
-	arrow.addEventListener('click', function () {
-		subMenu.classList.toggle('open');
-		arrow.classList.toggle('active');
-	})
+	menu.addEventListener('click', function (event) {
+		event.preventDefault();
+		menu.classList.add('open');
+	});
 } else {
 	body.classList.add('mouse');
 }
