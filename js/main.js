@@ -12,12 +12,11 @@ let body = document.querySelector('body');
 if (isMobile.any()) {
 	body.classList.add('touch');
 
-	let menu = document.querySelector('.nav__link-more');
-	console.log(menu);
+	let menu = document.querySelector('.nav__item-more');
 
 	menu.addEventListener('click', function (event) {
 		event.preventDefault();
-		menu.classList.add('open');
+		menu.classList.toggle('open');
 	});
 } else {
 	body.classList.add('mouse');

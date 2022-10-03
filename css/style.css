@@ -430,14 +430,13 @@ h6 {
 /* EFFECTS */
 body.mouse .nav__item:hover .sub-nav__list {
 	display: block;
-	color: #000;
 }
 body.mouse .nav__link-more:hover .nav-arrow {
 	color: #000;
 }
-
-body.touch .sub-nav__list.open {
-	display: block;
+body.touch .nav__item-more.open .sub-nav__list {
+	margin-top: 49px;
+	display: block;;
 }
 .nav__link:hover {
 	background-color: #ccc;
@@ -447,16 +446,8 @@ body.touch .sub-nav__list.open {
 	background-color: #ccc;
 	color: #000;
 }
-.nav__link:active {
-	font-size: 17px;
-	margin: 1.2px;
-	padding-bottom: 14px;
-}
 .nav__search-button:hover {
 	background-color: #f44336;
-}
-.nav__link:hover .sub-nav__list {
-	display: block;
 }
 .contacts__form:focus {
 	border: 1px solid black;
