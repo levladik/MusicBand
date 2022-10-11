@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Band</title>
     <link rel="stylesheet" href="./css/style.css" />
-	 <script src="https://kit.fontawesome.com/9d0dd4f0a9.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9d0dd4f0a9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- NAV -->
@@ -28,30 +31,53 @@
           <a class="nav__link" href="#contacts">Contact</a>
         </li>
 
+        <li class="nav__item burger-nav__item">
+          <a href="" class="nav__link burger-nav__link">Merchandise</a>
+        </li>
+
+        <li class="nav__item burger-nav__item">
+          <a href="" class="nav__link burger-nav__link">Extras</a>
+        </li>
+
+        <li class="nav__item burger-nav__item">
+          <a href="" class="nav__link burger-nav__link">Media</a>
+        </li>
+
+		  <li class="nav__item burger-nav__item">
+          <a href="" class="nav__link burger-nav__link-search"><i class="fas fa-search"></i></a>
+        </li>
+
         <li class="nav__item nav__item-more">
-          <a class="nav__link nav__link-more" href="">More				
-			 <i class="nav-arrow fa fa-caret-down"></i>
-			 </a>
+          <a class="nav__link nav__link-more" href=""
+            >More
+            <i class="nav-arrow fa fa-caret-down"></i>
+          </a>
 
-			 <ul class="sub-nav__list">
-				<li class="sub-nav__item">
-					<a href="" class="sub-nav__link">Merchandise</a>
-				</li>
+          <ul class="sub-nav__list">
+            <li class="sub-nav__item">
+              <a href="" class="sub-nav__link">Merchandise</a>
+            </li>
 
-				<li class="sub-nav__item">
-					<a href="" class="sub-nav__link">Extras</a>
-				</li>
+            <li class="sub-nav__item">
+              <a href="" class="sub-nav__link">Extras</a>
+            </li>
 
-				<li class="sub-nav__item">
-					<a href="" class="sub-nav__link">Media</a>
-				</li>
-			 </ul>
+            <li class="sub-nav__item">
+              <a href="" class="sub-nav__link">Media</a>
+            </li>
+          </ul>
         </li>
       </ul>
 
       <button class="nav__search-button">
-			<i class="fas fa-search"></i>
-		</button>
+        <i class="fas fa-search"></i>
+      </button>
+
+      <div class="nav__burger burger">
+        <span class="burger__line burger__line_first"></span>
+        <span class="burger__line burger__line_second"></span>
+        <span class="burger__line burger__line_third"></span>
+      </div>
     </nav>
 
     <main class="main">
@@ -74,50 +100,50 @@
 
       <!-- THE BAND -->
       <div class="band__wrapper" id="band">
-      	<section class="section-band">
-	        <h1 class="band__title section__title">The band</h1>
-	        <h2 class="band__subtitle section__subtitle">We love music</h2>
-	        <p class="band__text">
-	          We have created a fictional band website. Lorem ipsum dolor sit amet,
-	          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-	          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-	          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-	          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-	          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	          proident, sunt in culpa qui officia deserunt mollit anim id est
-	          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
-	          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-	          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	          consequat.
-	        </p>
-	
-	        <div class="band__photos-container">
-	          <div class="band__photo">
-	            <div class="band__photo-title">Name</div>
-	            <img
-	              class="band__pic"
-	              src="./assets/bandmember.jpg"
-	              alt="bandmember"
-	            />
-	          </div>
-	          <div class="band__photo">
-	            <div class="band__photo-title">Name</div>
-	            <img
-	              class="band__pic"
-	              src="./assets/bandmember.jpg"
-	              alt="bandmember"
-	            />
-	          </div>
-	          <div class="band__photo">
-	            <div class="band__photo-title">Name</div>
-	            <img
-	              class="band__pic"
-	              src="./assets/bandmember.jpg"
-	              alt="bandmember"
-	            />
-	          </div>
-	        </div>
-	      </section>
+        <section class="section-band">
+          <h1 class="band__title section__title">The band</h1>
+          <h2 class="band__subtitle section__subtitle">We love music</h2>
+          <p class="band__text">
+            We have created a fictional band website. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+
+          <div class="band__photos-container">
+            <div class="band__photo">
+              <div class="band__photo-title">Name</div>
+              <img
+                class="band__pic"
+                src="./assets/bandmember.jpg"
+                alt="bandmember"
+              />
+            </div>
+            <div class="band__photo">
+              <div class="band__photo-title">Name</div>
+              <img
+                class="band__pic"
+                src="./assets/bandmember.jpg"
+                alt="bandmember"
+              />
+            </div>
+            <div class="band__photo">
+              <div class="band__photo-title">Name</div>
+              <img
+                class="band__pic"
+                src="./assets/bandmember.jpg"
+                alt="bandmember"
+              />
+            </div>
+          </div>
+        </section>
       </div>
 
       <div class="tour__wrapper" id="tour">
@@ -203,48 +229,54 @@
       </div>
 
       <div class="contacts__wrapper" id="contacts">
-      	<section class="section-contacts">
-	        <h1 class="section__title contacts__title">CONTACT</h1>
-	        <p class="section__subtitle contacts__subtitle">Fan? Drop a note!</p>
-	
-	        <div class="contacts__container">
-	          <div class="contacts__info">
-					<i class="fa fa-map-marker contacts-marker" style="width:30px"></i>
-	            <p>Chicago, US</p><br>
-					<i class="fa fa-phone" style="width:30px"></i>
-	            <p>Phone: +00 151515</p><br>
-					<i class="fa fa-envelope" style="width:30px"> </i>
-	            <p>Email: mail@mail.com</p><br>
-	          </div>
-	
-	          <form class="contacts__form">
-	            <fieldset class="contacts__form-wrap">
-	              <input
-	                class="contacts__form-name contacts__form"
-	                type="text"
-	                name="User-name"
-	                placeholder="Name"
-	              />
-	
-	              <input
-	                class="contacts__form-email contacts__form"
-	                type="email"
-	                name="User-email"
-	                placeholder="Email"
-	              />
-	
-	              <input
-	                class="contacts__form-message contacts__form"
-	                type="text"
-	                name="User-message"
-	                placeholder="Message"
-	              />
-	
-	              <button class="contacts__form-button">SEND</button>
-	            </fieldset>
-	          </form>
-	        </div>
-	      </section>
+        <section class="section-contacts">
+          <h1 class="section__title contacts__title">CONTACT</h1>
+          <p class="section__subtitle contacts__subtitle">Fan? Drop a note!</p>
+
+          <div class="contacts__container">
+            <div class="contacts__info">
+              <i
+                class="fa fa-map-marker contacts-marker"
+                style="width: 30px"
+              ></i>
+              <p>Chicago, US</p>
+              <br />
+              <i class="fa fa-phone" style="width: 30px"></i>
+              <p>Phone: +00 151515</p>
+              <br />
+              <i class="fa fa-envelope" style="width: 30px"> </i>
+              <p>Email: mail@mail.com</p>
+              <br />
+            </div>
+
+            <form class="contacts__form">
+              <fieldset class="contacts__form-wrap">
+                <input
+                  class="contacts__form-name contacts__form"
+                  type="text"
+                  name="User-name"
+                  placeholder="Name"
+                />
+
+                <input
+                  class="contacts__form-email contacts__form"
+                  type="email"
+                  name="User-email"
+                  placeholder="Email"
+                />
+
+                <input
+                  class="contacts__form-message contacts__form"
+                  type="text"
+                  name="User-message"
+                  placeholder="Message"
+                />
+
+                <button class="contacts__form-button">SEND</button>
+              </fieldset>
+            </form>
+          </div>
+        </section>
       </div>
 
       <section class="map">
@@ -254,39 +286,70 @@
       <footer class="media">
         <ul class="media__list">
           <li class="media__item">
-            <a target="_blank" class="media__link" href="https://github.com/levladik"
-              ><img class="media__link-img" src="./assets/facebook-icon.png" alt="facebook" /></a
-            >
+            <a
+              target="_blank"
+              class="media__link"
+              href="https://github.com/levladik"
+              ><img
+                class="media__link-img"
+                src="./assets/facebook-icon.png"
+                alt="facebook"
+            /></a>
           </li>
           <li class="media__item">
-            <a target="_blank" class="media__link" href="https://github.com/levladik"
-              ><img class="media__link-img" src="./assets/instagram-icon.png" alt="instagram" /></a
-            >
+            <a
+              target="_blank"
+              class="media__link"
+              href="https://github.com/levladik"
+              ><img
+                class="media__link-img"
+                src="./assets/instagram-icon.png"
+                alt="instagram"
+            /></a>
           </li>
           <li class="media__item">
-            <a target="_blank" class="media__link" href="https://github.com/levladik"
-              ><img class="media__link-img" src="./assets/tg-icon.png" alt="telegram" /></a
-            >
+            <a
+              target="_blank"
+              class="media__link"
+              href="https://github.com/levladik"
+              ><img
+                class="media__link-img"
+                src="./assets/tg-icon.png"
+                alt="telegram"
+            /></a>
           </li>
           <li class="media__item">
-            <a target="_blank" class="media__link" href="https://github.com/levladik"
-              ><img class="media__link-img" src="./assets/twitter-icon.png" alt="" /></a
-            >
+            <a
+              target="_blank"
+              class="media__link"
+              href="https://github.com/levladik"
+              ><img
+                class="media__link-img"
+                src="./assets/twitter-icon.png"
+                alt=""
+            /></a>
           </li>
           <li class="media__item">
-            <a target="_blank" class="media__link" href="https://github.com/levladik"
-              ><img class="media__link-img" src="./assets/whatsapp-icon.png" alt="" /></a
-            >
+            <a
+              target="_blank"
+              class="media__link"
+              href="https://github.com/levladik"
+              ><img
+                class="media__link-img"
+                src="./assets/whatsapp-icon.png"
+                alt=""
+            /></a>
           </li>
           <li class="media__item">
             <a class="media__link" href="https://github.com/levladik"
-              ><img src="" alt="" /></a
-            >
+              ><img src="" alt=""
+            /></a>
           </li>
         </ul>
 
         <p class="sign">
-          Powered by <a target="_blank" href="https://github.com/levladik">Levladik</a>
+          Powered by
+          <a target="_blank" href="https://github.com/levladik">Levladik</a>
         </p>
       </footer>
     </main>
