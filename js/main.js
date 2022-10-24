@@ -21,3 +21,13 @@ if (isMobile.any()) {
 } else {
 	body.classList.add('mouse');
 }
+
+(function () {
+	const burgerItem = document.querySelector('.burger');
+	const menu = document.querySelectorAll('.nav__item');
+	const burgerMenu = document.querySelectorAll('.burger-nav__item');
+	burgerItem.addEventListener('click', () => {
+		menu.classList.toggle('nav__item_active');
+		burgerMenu.classList.toggle('burger-nav__item_active');
+	})
+}());
