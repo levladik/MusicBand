@@ -25,9 +25,9 @@ if (isMobile.any()) {
 (function () {
 	const burgerItem = document.querySelector('.burger');
 	const menu = document.querySelectorAll('.nav__item');
-	const burgerMenu = document.querySelectorAll('.burger-nav__item');
 	burgerItem.addEventListener('click', () => {
-		menu.classList.toggle('nav__item_active');
-		burgerMenu.classList.toggle('burger-nav__item_active');
+		for (let i = 0; i < menu.length; i++) {
+			menu[i].classList.toggle('nav__item_active');
+		}
 	})
 }());
