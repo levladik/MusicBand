@@ -225,7 +225,7 @@ h6 {
 	max-width: 780px;
 	margin: 0 auto;
 	text-align: justify;
-	padding: 80px 0;
+	padding: 80px 20px;
 }
 .section__title {
 	font-weight: 400;
@@ -273,7 +273,7 @@ h6 {
 /* TOUR */
 .tour__wrapper {
 	background-color: black;
-	padding: 80px 0;
+	padding: 80px 20px;
 }
 .section-tour {
 	max-width: 780px;
@@ -327,10 +327,11 @@ h6 {
 .buy__tickets_card {
 	max-width: 32%;
 	background-color: white;
+	margin-bottom: 15px;
 }
 .buy__tickets_info {
 	max-width: 80%;
-	margin: 0 auto;
+	padding: 0 20px;
 }
 .buy__tickets_city-pic {
 	margin-bottom: 15px;
@@ -370,12 +371,22 @@ h6 {
 .contacts__wrapper {
 	max-width: 790px;
 	margin: 0 auto;
-	padding: 80px 0;
+	padding: 80px 20px;
 }
+.form__wrapper {
+	width: 50%;
+}
+/* .contacts__form {
+	max-width: 100%;
+} */
 .contacts__container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+}
+.contacts__info {
+	padding-right: 15px;
+	padding-bottom: 10px;
 }
 .contacts__info > p {
 	font-size: 18px;
@@ -383,15 +394,16 @@ h6 {
 	display: inline;
 }
 .contacts__form-name {
-	margin-right: 10px;
 	border: 1px solid #ccc;
 	font-size: 15px;
 	padding: 8px;
-	width: 210px;
+	width: 49.9%;
+	margin-bottom: 10px;
 }
 .contacts__form-email {
 	font-size: 15px;
 	border: 1px solid #ccc;
+	width: 49%;
 	padding: 8px;
 	margin-bottom: 10px;
 }
@@ -497,7 +509,6 @@ button:hover {
 	.nav__list {
 		display: block;
 	}
-/* ------------------ */
 	.nav__item {
 		display: none;
 	}
@@ -510,16 +521,12 @@ button:hover {
 	.burger-nav__item_active {
 		display: block;
 	}
-/* ------------------ */
 	.nav__item-home {
 		display: block;
 	}
 	.nav__item-more {
 		display: none;
 	}
-
-
-	
 	.nav__search-button {
 		display: none;
 	}
@@ -528,5 +535,36 @@ button:hover {
 	}	
 	.nav__link-home {
 		padding-right: 15px;
+	}
+
+	/* THE BAND */
+	.band__photos-container {
+		flex-direction: column;
+		margin-bottom: 15px;
+	}
+
+	/* TOUR DATES */
+	.buy__tickets_container {
+		flex-direction: column;
+	}
+	.buy__tickets_card {
+		max-width: 100%;
+	}
+	.buy__tickets_city-img {
+		width: 100%;
+	}
+
+	/* CONTACT */
+	.form__wrapper {
+		width: 100%;
+	}
+	.contacts__form-name {
+		width: 100%;
+	}
+	.contacts__form-email {
+		width: 100%;
+	}
+	.contacts__form-message {
+		width: 100%;
 	}
 }
