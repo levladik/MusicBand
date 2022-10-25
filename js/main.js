@@ -30,4 +30,12 @@ if (isMobile.any()) {
 			menu[i].classList.toggle('nav__item_active');
 		}
 	})
+
+	for (let i = 0; i < menu.length; i++) {
+		menu[i].addEventListener('click', () => {
+		for (let i = 0; i < menu.length; i++) {
+			menu[i].classList.remove('nav__item_active');
+		}
+	})
+	}
 }());
