@@ -39,3 +39,9 @@ if (isMobile.any()) {
 	})
 	}
 }());
+
+new Swiper ('.slideshow__container', {
+	autoplay: {
+		delay: 2000,
+	}
+});

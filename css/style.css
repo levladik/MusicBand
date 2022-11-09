@@ -197,6 +197,7 @@ h6 {
 /* SLIDESHOW */
 .slideshow__container {
 	margin-bottom: 0;
+	overflow: hidden;
 }
 .slideshow__img {
 	position: relative;
@@ -327,7 +328,7 @@ h6 {
 .buy__tickets_card {
 	max-width: 32%;
 	background-color: white;
-	margin-bottom: 15px;
+	padding-bottom: 15px;
 }
 .buy__tickets_info {
 	max-width: 80%;

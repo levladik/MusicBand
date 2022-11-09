@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Band</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/9d0dd4f0a9.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- NAV -->
@@ -76,19 +76,45 @@
     <main class="main">
       <!-- SLIDESHOW -->
       <section class="slideshow" id="nav">
-        <div class="slideshow__container">
-          <img
-            class="slideshow__img"
-            src="./assets/chicago.jpg"
-            alt="chicago"
-          />
-          <div class="slideshow__text">
-            <h2 class="slideshow__title">Chicago</h2>
-            <p class="slideshow__desc">
-              Thank you, Chicago — A night we won't forget.
-            </p>
+        <div class="slideshow__container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="slideshow__img"
+                src="./assets/chicago.jpg"
+                alt="chicago"
+              />
+              <div class="slideshow__text">
+                <h2 class="slideshow__title">Chicago</h2>
+                <p class="slideshow__desc">
+                  Thank you, Chicago — A night we won't forget.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img class="slideshow__img" src="./assets/la.jpg" alt="chicago" />
+              <div class="slideshow__text">
+                <h2 class="slideshow__title">Los Angeles</h2>
+                <p class="slideshow__desc">
+                  We had the best time playing at Venice Beach!
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img class="slideshow__img" src="./assets/ny.jpg" alt="chicago" />
+              <div class="slideshow__text">
+                <h2 class="slideshow__title">New York</h2>
+                <p class="slideshow__desc">
+                  The atmosphere in New York is lorem ipsum.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div class="swiper-pagination"></div>
       </section>
 
       <!-- THE BAND -->
@@ -243,31 +269,31 @@
             </div>
 
             <div class="form__wrapper">
-            	<form class="contacts__form">
-	              <fieldset class="contacts__form-wrap">
-	                <input
-	                  class="contacts__form-name contacts__form"
-	                  type="text"
-	                  name="User-name"
-	                  placeholder="Name"
-	                />
-	
-	                <input
-	                  class="contacts__form-email contacts__form"
-	                  type="email"
-	                  name="User-email"
-	                  placeholder="Email"
-	                />
-	
-	                <input
-	                  class="contacts__form-message contacts__form"
-	                  type="text"
-	                  name="User-message"
-	                  placeholder="Message"
-	                />
-	              </fieldset>
-	              <button class="contacts__form-button">SEND</button>
-	            </form>
+              <form class="contacts__form">
+                <fieldset class="contacts__form-wrap">
+                  <input
+                    class="contacts__form-name contacts__form"
+                    type="text"
+                    name="User-name"
+                    placeholder="Name"
+                  />
+
+                  <input
+                    class="contacts__form-email contacts__form"
+                    type="email"
+                    name="User-email"
+                    placeholder="Email"
+                  />
+
+                  <input
+                    class="contacts__form-message contacts__form"
+                    type="text"
+                    name="User-message"
+                    placeholder="Message"
+                  />
+                </fieldset>
+                <button class="contacts__form-button">SEND</button>
+              </form>
             </div>
           </div>
         </section>
@@ -334,11 +360,6 @@
                 alt=""
             /></a>
           </li>
-          <li class="media__item">
-            <a class="media__link" href="https://github.com/levladik"
-              ><img src="" alt=""
-            /></a>
-          </li>
         </ul>
 
         <p class="sign">
@@ -347,6 +368,13 @@
         </p>
       </footer>
     </main>
-  </body>
+
+	 <script
+    src="https://kit.fontawesome.com/9d0dd4f0a9.js"
+    crossorigin="anonymous"
+  ></script>  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
+  </body>
+  
 </html>
